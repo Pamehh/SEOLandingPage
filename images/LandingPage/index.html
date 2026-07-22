@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riverline Ergonomic | Calzado de seguridad industrial</title>
+<meta name="description" content="Calzado de seguridad industrial certificado. Innovación, desempeño y comodidad para tu empresa. Descuentos por volumen, entrega inmediata y garantía de calidad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#" class="logo">
+      <img src="images\logo-riverline.png" alt="Riverline Ergonomic" class="logo-img">
+    </a>
+    <a href="#cotizar" class="btn btn-primary btn-sm js-open-modal">Cotizar ahora</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-bg">
+      <picture>
+        <source media="(min-width:1025px)" srcset="images\hero-desktop.png"> 
+        <source media="(min-width:481px)" srcset="images\hero-tablet.jpg">
+        <img src="images\hero-mobile.jpg" alt="Trabajador con botas de seguridad industrial" class="hero-bg-img">
+      </picture>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="eyebrow eyebrow-light">calzado ergonómico</p>
+        <h1 class="hero-title">Innovación, desempeño y comodidad</h1>
+        <h2 class="hero-subtitle">Para tu trabajo y empresa</h2>
+        <p class="hero-desc">Solución de seguridad, salud y ergonomía.</p>
+        <div class="hero-actions">
+          <a href="#catalogo" class="btn btn-outline-light">Descarga nuestro catálogo</a>
+        </div>
+      </div>
+
+      <!-- Inline form card — visible on desktop/tablet only -->
+      <div class="form-card form-card--inline" id="cotizar">
+        <h2 class="form-card-title">Recibe más información personalizada</h2>
+        <p class="form-card-desc">Un especialista se pondrá en contacto para asesorar a su empresa.</p>
+
+        <form class="quote-form" action="procesar-formulario.php" method="POST" id="quoteFormDesktop">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="nombre-d">Nombre</label>
+              <input type="text" id="nombre-d" name="nombre" placeholder="Escribe tu nombre" required>
+            </div>
+            <div class="form-field">
+              <label for="apellido-d">Apellido</label>
+              <input type="text" id="apellido-d" name="apellido" placeholder="Pérez" required>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="empresa-d">Empresa</label>
+            <input type="text" id="empresa-d" name="empresa" placeholder="Nombre de empresa" required>
+          </div>
+
+          <div class="form-field">
+            <label for="correo-d">Correo corporativo</label>
+            <input type="email" id="correo-d" name="correo" placeholder="jperez@empresa.com" required>
+          </div>
+
+          <div class="form-field">
+            <label for="telefono-d">Teléfono</label>
+            <div class="phone-input">
+              <span class="phone-flag">🇲🇽 <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg></span>
+              <input type="tel" id="telefono-d" name="telefono" placeholder="+52 33 3456 4567" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="estado-d">Estado de la república *</label>
+              <select id="estado-d" name="estado" required>
+                <option value="" disabled selected>Selecciona</option>
+                <option>Jalisco</option>
+                <option>Ciudad de México</option>
+                <option>Nuevo León</option>
+                <option>Estado de México</option>
+                <option>Guanajuato</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="empleados-d">Cantidad de empleados *</label>
+              <select id="empleados-d" name="cantidad_empleados" required>
+                <option value="" disabled selected>Selecciona</option>
+                <option>1 - 50</option>
+                <option>50 - 100</option>
+                <option>100 - 500</option>
+                <option>500+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="especificaciones-d">Especificaciones</label>
+            <textarea id="especificaciones-d" name="especificaciones" rows="3" placeholder="Ej: Cantidad de pares, características, etc."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECNOLOGÍA / FEATURES ============ -->
+  <section class="section features-section">
+    <div class="container">
+      <h2 class="section-title  section-title--semibold text-center"> 
+        <span class="accent">Tecnología aplicada </span>
+        de seguridad en el calzado industrial
+      </h2>
+      <h3 class="section-desc text-center">Incluímos modelos con distintos niveles de protección según el tipo de operación y entorno de trabajo:</h3>
+
+      <div class="feature-showcase">
+        <div class="feature-list feature-list--left">
+          <div class="feature-item">
+            <h3 class="feature-title">Calzado resistente al agua</h3>
+            <p class="feature-desc">Diseñado con impermeabilidad para entornos con exposición a líquidos.</p>
+          </div>
+          <div class="feature-item">
+            <h3 class="feature-title">Suela antiderrapante</h3>
+            <p class="feature-desc">Mayor estabilidad en superficies lisas o húmedas.</p>
+          </div>
+        </div>
+
+        <div class="feature-image">
+          <img src="images\bota descktop B2B 590x700px 2.jpg" alt="Bota de seguridad Riverline Ergonomic" loading="lazy">
+        </div>
+
+        <div class="feature-list feature-list--right">
+          <div class="feature-item">
+            <h3 class="feature-title">Diseño ergonómico</h3>
+            <p class="feature-desc">Mayor confort para jornadas prolongadas.</p>
+          </div>
+          <div class="feature-item">
+            <h3 class="feature-title">Modelos con casquillo de seguridad</h3>
+            <p class="feature-desc">Protección en puntera contra impactos y compresión.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="#catalogo" class="btn btn-outline-dark">Descarga nuestro catálogo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BENEFICIOS ============ -->
+  <section class="section benefits-section">
+    <div class="container">
+      <h2 class="section-title text-center">Beneficios clave <span class="accent">para ti y tu empresa</span></h2>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <img src="images/icon-ventas-volumen.jpg" alt="Descuentos por volumen" loading="lazy">
+          <h3>Descuentos por volumen</h3>
+          <p>Aprovecha precios especiales en compras empresariales.</p>
+        </div>
+        <div class="benefit-card">
+          <img src="images/icon-entrega-inmediata.jpg" alt="Entrega inmediata" loading="lazy">
+          <h3>Entrega inmediata</h3>
+          <p>Stock disponible para responder a tu operación.</p>
+        </div>
+        <div class="benefit-card">
+          <img src="images/icon-envios.jpg" alt="Envíos gratis" loading="lazy">
+          <h3>Envíos gratis desde un par a toda la república mexicana</h3>
+          <p>Consultar zonas de cobertura.</p>
+        </div>
+        <div class="benefit-card">
+          <img src="images/icon-calidad.jpg" alt="Calidad y garantía" loading="lazy">
+          <h3>Calidad y garantía de satisfacción</h3>
+          <p>Productos diseñados para durar y rendir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTORES ============ -->
+  <section class="section sectors-section">
+    <div class="container">
+      <h2 class="section-title text-center">Botas y tenis industriales para cada sector</h2>
+      <p class="section-desc text-center">Contamos con calzado de trabajo al por mayor especializado para múltiples industrias donde la seguridad no es opcional.</p>
+
+      <ul class="sector-list">
+        <li class="sector-item sector-item--highlight">
+          <span class="sector-icon" aria-hidden="true"></span>
+          <div>
+            <h3>Talleres mecánicos</h3>
+            <p>Resistente a aceites, hidrocarburos y superficies resbaladizas.</p>
+          </div>
+        </li>
+        <li class="sector-item">
+          <span class="sector-icon" aria-hidden="true"></span>
+          <div>
+            <h3>Transporte y logística</h3>
+            <p>Calzado de alto rendimiento para transporte y almacenaje.</p>
+          </div>
+        </li>
+        <li class="sector-item">
+          <span class="sector-icon" aria-hidden="true"></span>
+          <div>
+            <h3>Industria automotriz</h3>
+            <p>Calzado de protección para manufactura y ensamblaje.</p>
+          </div>
+        </li>
+        <li class="sector-item">
+          <span class="sector-icon" aria-hidden="true"></span>
+          <div>
+            <h3>Almacenaje y distribución</h3>
+            <p>Calzado de alto desempeño para gestión de almacenes.</p>
+          </div>
+        </li>
+        <li class="sector-item">
+          <span class="sector-icon" aria-hidden="true"></span>
+          <div>
+            <h3>Industria metal-mecánica</h3>
+            <p>Calzado de seguridad dieléctrico y rudo para la industria.</p>
+          </div>
+        </li>
+        <li class="sector-item">
+          <span class="sector-icon" aria-hidden="true"></span>
+          <div>
+            <h3>Construcción</h3>
+            <p>Calzado ergonómico rudo para proyectos de infraestructura.</p>
+          </div>
+        </li>
+        <li class="sector-item">
+          <span class="sector-icon" aria-hidden="true"></span>
+          <div>
+            <h3>Industria minera</h3>
+            <p>Calzado técnico especializado para minería.</p>
+          </div>
+        </li>
+        <li class="sector-item">
+          <span class="sector-icon" aria-hidden="true"></span>
+          <div>
+            <h3>Industria petrolera</h3>
+            <p>Calzado de seguridad para plantas de producción y fábricas.</p>
+          </div>
+        </li>
+        <li class="sector-item">
+          <span class="sector-icon" aria-hidden="true"></span>
+          <div>
+            <h3>Seguridad pública y privada</h3>
+            <p>Calzado operativo antifatiga para vigilancia y seguridad patrimonial.</p>
+          </div>
+        </li>
+        <li class="sector-item">
+          <span class="sector-icon" aria-hidden="true"></span>
+          <div>
+            <h3>Sectores de alto riesgo</h3>
+            <p>Calzado certificado de máxima seguridad para industrias de riesgo.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICACIONES ============ -->
+  <section class="section certifications-section">
+    <div class="cert-image">
+      <img src="images/worker-desktop.jpg" alt="Trabajador con equipo de seguridad" loading="lazy">
+    </div>
+
+    <div class="cert-content">
+      <div class="container container--right">
+        <h2 class="section-title section-title--light">Botas de seguridad certificadas</h2>
+        <p class="section-desc section-desc--light">Para proteger la salud y continuidad operativa</p>
+
+        <p class="cert-intro">Sectores de alto riesgo. Botas de seguridad certificadas internacionalmente, diseñadas ergonómicamente para prevenir lesiones musculoesqueléticas y mantener tu planta productiva y sin incidentes.</p>
+
+        <div class="cert-list">
+          <div class="cert-item">
+            <h3>ASTM F2413-24</h3>
+            <p>Regula los requisitos mínimos de rendimiento para el calzado de protección con puntera.</p>
+          </div>
+          <div class="cert-item">
+            <h3>ASTM F2892-24</h3>
+            <p>Estándar internacional que define los requisitos de rendimiento para el calzado de protección sin puntera de seguridad (sin casquillo).</p>
+          </div>
+          <div class="cert-item">
+            <h3>NOM-113-STPS</h3>
+            <p>Calzado de seguridad que cumple con los más altos estándares de protección y ergonomía exigidos por la ley.</p>
+          </div>
+        </div>
+        <p class="cert-note">*Aplica en modelos particulares.</p>
+
+        <a href="#certificaciones" class="btn btn-outline-light">Descargar certificaciones</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIOS ============ -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <h2 class="section-title text-center">Más que un proveedor, un <span class="accent">aliado estratégico</span> en seguridad, desempeño y comfort</h2>
+      <p class="section-desc text-center">Conoce las historias de éxito de aquellas industrias que transformaron su jornada laboral con nuestro calzado ergonómico.</p>
+
+      <div class="testimonial-track">
+        <blockquote class="testimonial-card">
+          <p>&ldquo;Me siento muy agradecido de que la marca cuente con estas soluciones. Gracias a su alcance pudimos cerrar una importante acción de mejora dentro de nuestra empresa. Sin duda, fue una excelente experiencia.&rdquo;</p>
+          <footer>
+            <span class="testimonial-name">Juan Vilchis</span>
+            <span class="testimonial-role">Gerente EHS · Imerys</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card">
+          <p>&ldquo;La atención es increíble. Desde el primer momento te acompañan con un profesionalismo y una calidez humana excepcionales. Un gusto trabajar con este equipo, súper agradecido por su apoyo en cada etapa del proceso.&rdquo;</p>
+          <footer>
+            <span class="testimonial-name">Roberto Chavolla Pérez</span>
+            <span class="testimonial-role">Coordinador de seguridad y salud ocupacional · OXXO</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card">
+          <p>&ldquo;Quedé muy satisfecho con el apoyo brindado durante todo el proceso. Siempre recibí información oportuna y una excelente atención, lo que hizo muy agradable trabajar con el equipo.&rdquo;</p>
+          <footer>
+            <span class="testimonial-name">Orlando Juárez</span>
+            <span class="testimonial-role">Cliente Industrial · Fastenal</span>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="testimonial-dots" aria-hidden="true">
+        <span class="dot dot--active"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="cta-final">
+    <div class="cta-bg">
+      <img src="images/feet-desktop.jpg" alt="Botas de seguridad en piso industrial" loading="lazy">
+      <div class="cta-overlay"></div>
+    </div>
+    <div class="container">
+      <h2 class="cta-title">Asegura la protección de tu equipo con un calzado de calidad</h2>
+      <p class="cta-desc">Conoce nuestro portafolio con modelos disponibles y calidad constante para abastecer a tu empresa sin complicaciones y con descuentos por volumen.</p>
+      <button type="button" class="btn btn-primary js-open-modal">Cotizar ahora</button>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo-riverline-light.svg" alt="Riverline Ergonomic" class="footer-logo">
+      <p>30 años liderando el mercado mexicano. Calzado de seguridad con calidad de exportación.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Directorio</h4>
+      <ul>
+        <li><a href="#privacidad">Política de privacidad</a></li>
+        <li><a href="#terminos">Términos y condiciones</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Certificaciones</h4>
+      <ul>
+        <li><a href="#certificaciones">Detalles certificaciones</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Aspectos técnicos</h4>
+      <ul>
+        <li><a href="#nom">Certificación NOM-113-STPS</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year"></span> Riverline Ergonomic. Todos los derechos reservados. Certificado NOM-113-STPS.</p>
+  </div>
+</footer>
+
+<!-- ============ MODAL FORM (mobile + reused for any "Cotizar ahora" CTA) ============ -->
+<div class="modal-overlay" id="quoteModal" aria-hidden="true">
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button type="button" class="modal-close js-close-modal" aria-label="Cerrar formulario">&times;</button>
+
+    <h2 class="form-card-title" id="modalTitle">Recibe más información personalizada</h2>
+    <p class="form-card-desc">Un especialista se pondrá en contacto para asesorar a su empresa.</p>
+
+    <form class="quote-form" action="procesar-formulario.php" method="POST" id="quoteFormModal">
+      <div class="form-field">
+        <label for="nombre-m">Nombre</label>
+        <input type="text" id="nombre-m" name="nombre" placeholder="Escribe tu nombre" required>
+      </div>
+
+      <div class="form-field">
+        <label for="apellido-m">Apellido</label>
+        <input type="text" id="apellido-m" name="apellido" placeholder="Pérez" required>
+      </div>
+
+      <div class="form-field">
+        <label for="empresa-m">Empresa</label>
+        <input type="text" id="empresa-m" name="empresa" placeholder="Mi empresa" required>
+      </div>
+
+      <div class="form-field">
+        <label for="correo-m">Correo corporativo</label>
+        <input type="email" id="correo-m" name="correo" placeholder="jperez@empresa.com" required>
+      </div>
+
+      <div class="form-field">
+        <label for="telefono-m">Teléfono</label>
+        <div class="phone-input">
+          <span class="phone-flag">🇲🇽</span>
+          <input type="tel" id="telefono-m" name="telefono" placeholder="+52 33 3456 4567" required>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="estado-m">Estado de la república *</label>
+        <select id="estado-m" name="estado" required>
+          <option value="" disabled selected>Jalisco</option>
+          <option>Jalisco</option>
+          <option>Ciudad de México</option>
+          <option>Nuevo León</option>
+          <option>Estado de México</option>
+          <option>Guanajuato</option>
+          <option>Otro</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="empleados-m">Cantidad de empleados *</label>
+        <select id="empleados-m" name="cantidad_empleados" required>
+          <option value="" disabled selected>50 - 100</option>
+          <option>1 - 50</option>
+          <option>50 - 100</option>
+          <option>100 - 500</option>
+          <option>500+</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="especificaciones-m">Especificaciones</label>
+        <textarea id="especificaciones-m" name="especificaciones" rows="3" placeholder="Ej: Cantidad de pares, características, etc."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+      <button type="button" class="btn btn-text js-close-modal">Salir sin enviar</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
