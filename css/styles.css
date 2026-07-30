@@ -375,6 +375,10 @@ p { margin: 0; }
   margin: 0 14px 16px; 
   padding:0 1.5rem 1.5rem;
 }
+.highlight-link {
+  color: #D71920;
+  font-weight: 600;
+}
 
 .benefits-carousel{width: 100%; margin: 0 auto; display:block; margin-top:0rem;}
 .benefits-carousel .benefit-card{
