@@ -707,6 +707,33 @@ p { margin: 0; }
   padding-top: 20px; font-size: 0.78rem;
 }
 
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #fff;
+    color: #B6152E; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .3s ease;
+}
+
+.social-icons a:hover {
+    background: #B6152E;
+    color: #fff;
+}
+
+
+
 /* =====================================================
    MODAL (mobile quote form — also reusable on desktop)
    ===================================================== */
